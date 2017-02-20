@@ -1,0 +1,37 @@
+{
+  "name": "js-leancloud-test",
+  "version": "1.0.0",
+  "description": "Leancloud resistance test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify public/main.jsx -t babelify --o public/bundle.js",
+    "watch": "watchify public/main.jsx -t babelify --o public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zcgu/leancloud-js-test.git"
+  },
+  "author": "Zhicheng Gu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zcgu/leancloud-js-test/issues"
+  },
+  "homepage": "https://github.com/zcgu/leancloud-js-test#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "browserify": "^14.1.0",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0"
+  }
+}
